@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:textAlignment="center"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/therapy_mode"
+        android:textColor="#023530"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iftmode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginVertical="30dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/iftmode"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg1"
+        android:hint="@string/ift_mode"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#03322D"
+        android:textColorHint="#03322D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+       />
+
+    <TextView
+        android:id="@+id/tensmode"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg1"
+        android:hint="@string/tens_mode"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#03322D"
+        android:textColorHint="#03322D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iftmode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/faradicmode"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg1"
+        android:hint="@string/faradic_mode"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#03322D"
+        android:textColorHint="#03322D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tensmode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:id="@+id/galvanicmode"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/faradicmode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg1"
+        android:hint="@string/galvanic_mode"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#03322D"
+        android:textColorHint="#03322D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+
+    <ImageView
+        android:id="@+id/timer"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/galvanicmode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/baseline_timer_24"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/timerSet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="10dp"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timerSet"
+        android:layout_below="@+id/timer"
+        android:text="SET"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/timerDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@id/timerSet"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_start_pause"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerDisplay"
+        android:layout_marginTop="30dp"
+        android:text="Start"
+        android:layout_marginLeft="112dp"/>
+
+    <Button
+        android:id="@+id/button_reset"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerDisplay"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="30dp"
+        android:text="RESET"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="physiotherapy">PHYSIOTHERAPY</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="healthcare">Healthcare</string>
+    <string name="registration">Registration</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="todo">TODO</string>
+    <string name="home">Home</string>
+    <string name="mode">Mode</string>
+    <string name="patient_report">Patient Report</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="ift_mode">IFT MODE</string>
+    <string name="tens_mode">TENS MODE</string>
+    <string name="faradic_mode">FARADIC MODE</string>
+    <string name="galvanic_mode">GALVANIC MODE</string>
+    <string name="therapy_mode">THERAPY MODE</string>
+    <string name="start">START</string>
+    <string name="physiotherapy1">PHYSIOTHERAPY</string>
+    <string name="login">Login</string>
+    <string name="username1">Username</string>
+    <string name="password1">Password</string>
+    <string name="login1">Login</string>
+    <string name="register_for_new_user">Register for New User</string>
+</resources>
